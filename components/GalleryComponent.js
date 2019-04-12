@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, FlatList, Image, TouchableOpacity, Platform } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { loadImages } from './LoadImages';
 
@@ -86,7 +86,7 @@ class GalleryComponent extends Component {
 const styles = StyleSheet.create({
     changeView: {
         alignSelf: 'flex-end',
-        marginTop: hp('2%'),
+        marginTop: Platform.OS === 'ios' ? hp('4%') : hp('2%'),
         marginRight: hp('2%'),
         fontSize: 16
     },
