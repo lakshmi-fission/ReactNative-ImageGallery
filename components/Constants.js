@@ -1,0 +1,2 @@
+export const ACCESS_KEY = '8a7cd1b78040504048a0d3c622f15de7421dacfd87d437caafa35c2bf5e8efec';
+export const SECRET_KEY = 'cf53820dbe453ccabf61ed8185be45c5a176e295a1aac4df3a79b5c024c3389a';
