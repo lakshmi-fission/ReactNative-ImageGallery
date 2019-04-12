@@ -3,10 +3,10 @@
 
 # Prerequisites
 
-1.Node
-2.Android studio
-3.Xcode
-4.Visual Studio
+1. Node
+2. Android studio
+3. Xcode
+4. Visual Studio
 
 And follow the below steps to run the application after clone the repository
 
