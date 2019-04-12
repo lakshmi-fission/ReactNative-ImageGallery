@@ -31,7 +31,7 @@ class GalleryComponent extends Component {
             imagesData.push(data[i].urls.regular);
         }
         //This is for just adding extra images to check performance
-        for (let i = 0; i < 200; i++) {
+        for (let i = 0; i < 205; i++) {
             imagesData.push('https://images.unsplash.com/photo-1553531768-a0f91bcfbd3e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjY1ODE2fQ');
         }
         this.setState({ imageUrls: imagesData });
@@ -65,7 +65,7 @@ class GalleryComponent extends Component {
         return (
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <TouchableOpacity style={styles.changeView} onPress={() => this._changeView()}>
-                    <Text>Change View</Text>
+                    <Text style={{ fontSize: 14, textAlign: 'center' }}>Change View</Text>
                 </TouchableOpacity>
                 <FlatList
                     data={this.state.imageUrls}
@@ -86,9 +86,13 @@ class GalleryComponent extends Component {
 const styles = StyleSheet.create({
     changeView: {
         alignSelf: 'flex-end',
-        marginTop: Platform.OS === 'ios' ? hp('4%') : hp('2%'),
+        marginTop: Platform.OS === 'ios' ? hp('5%') : hp('3%'),
         marginRight: hp('2%'),
-        fontSize: 16
+        height: hp('5%'),
+        width: wp('25%'),
+        borderWidth: 1,
+        borderColor: 'black',
+        justifyContent: 'center',
     },
     listlayout: {
         marginTop: hp('2%')
